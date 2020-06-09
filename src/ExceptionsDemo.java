@@ -11,14 +11,16 @@ public class ExceptionsDemo {
         int b=sc.nextInt();
         int c=0;
         try {
-            System.out.println("Args : "+args[0]);  //Array Index out of bounds exception
+         //   System.out.println("Args : "+args[0]);  //Array Index out of bounds exception
             c = a / b;   // Divide by zero - Arithmetic exception
             System.out.println("Print value of c: ");
         }catch(Exception e){
           //  System.out.println(e);
             System.out.println("Denominator value cannot be zero. "+e);
         }
-
+        finally {
+            System.out.println("Inside finally block");
+        }
         System.out.println("Total : "+c);
 
     }
